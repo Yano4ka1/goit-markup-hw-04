@@ -32,8 +32,23 @@
             </nav>
 
                 <ul class="auth-nav list">
-                    <li class="item"> <a href="mailto:info@devstudio.com" class="link-auth"> info@devstudio.com </a></li>
-                    <li class="item"> <a href="tel:+380961111111" class="link-auth"> +38 096 111 11 11 </a></li>
+                    <li class="item"> 
+                        <a class="link-auth" href="mailto:info@devstudio.com"> 
+                        <svg class="auth-nav-icon" width="16" height="12">
+                            <use href="./images/svg/symbol-defs.svg#icon-mail"></use>
+                        </svg>
+                        info@devstudio.com 
+                        </a>
+                    </li>
+
+                    <li class="item">
+                        <a class="link-auth" href="tel:+380961111111">
+                        <svg class="auth-nav-icon" width="16" height="12">
+                            <use href="./images/svg/symbol-defs.svg#icon-tel"></use>
+                        </svg>
+                         +38 096 111 11 11 
+                        </a>
+                    </li>
                 </ul>
         </div>
 
@@ -42,14 +57,15 @@
 
     <main>
 
-        <section class="title">
+    <!--Заголовок-->
+        <section class="fon">
 
             <div class="container">
                 <h1 class="title-name">Эффективные решения для вашего бизнеса</h1>
                 <button type="button" class="button-title">Заказать услугу </button>
             </div>
 
-            </section>
+        </section>
 
     <!--Опис роботи-->
         <section class="section">
@@ -60,21 +76,38 @@
 
                 <ul class="descriptions list">
                     <li class="descriptions-items">
+                        <div class="descriptions-icon">
+                            <svg class="img-icon" width="70" height="70">
+                            <use href="./images/svg/symbol-defs.svg#icon-antenna"></use>
+                        </div>
+                        
                         <h3 class="descriptions-name">Внимание к деталям</h3>
                         <p class="descriptions-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
 
                     <li class="descriptions-items">
+                        <div class="descriptions-icon">
+                            <svg class="img-icon" width="70" height="70">
+                            <use href="./images/svg/symbol-defs.svg#icon-clock"></use>
+                        </div>
                         <h3 class="descriptions-name">Пунктуальность</h3>
                         <p class="descriptions-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
 
                     <li class="descriptions-items">
+                        <div class="descriptions-icon">
+                            <svg class="img-icon" width="70" height="70">
+                            <use href="./images/svg/symbol-defs.svg#icon-Vector"></use>
+                        </div>
                         <h3 class="descriptions-name">Планирование</h3>
                         <p class="descriptions-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
 
                     <li class="descriptions-items">
+                        <div class="descriptions-icon">
+                            <svg class="img-icon" width="70" height="70">
+                            <use href="./images/svg/symbol-defs.svg#icon-astronaut"></use>
+                        </div>
                         <h3 class="descriptions-name">Современные технологии</h3>
                         <p class="descriptions-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
@@ -94,6 +127,9 @@
             </div>
         </section>
 
+
+        <!-- НАША КОМАНДА -->
+
         <section class="section team">
 
             <div class="container">
@@ -104,6 +140,35 @@
                         <div class="text-conteiner">
                             <h3 class="team-name">Игорь Демьяненко</h3>
                             <p class="team-text" lang="en">Product Designer</p>
+                            <ul class="socials">
+                                <li class="sacials-item list">
+                                    <a class="social-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="иконка instagram ">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/svg/symbol-defs.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                <li class="sacials-item list">
+                                    <a class="social-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="иконка twitter">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/svg/symbol-defs.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="sacials-item list">
+                                    <a class="social-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="иконка fecebook">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/svg/symbol-defs.svg#icon-fecebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="sacials-item list">
+                                    <a class="social-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="иконка linkedin">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/svg/symbol-defs.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                        
                     </li>
@@ -112,6 +177,35 @@
                         <div class="text-conteiner">
                             <h3 class="team-name">Ольга Репина</h3>
                             <p class="team-text" lang="en">Frontend Developer</p>
+                            <ul class="socials">
+                                <li class="sacials-item list">
+                                    <a class="social-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="иконка instagram ">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/svg/symbol-defs.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                <li class="sacials-item list">
+                                    <a class="social-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="иконка twitter">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/svg/symbol-defs.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="sacials-item list">
+                                    <a class="social-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="иконка fecebook">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/svg/symbol-defs.svg#icon-fecebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="sacials-item list">
+                                    <a class="social-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="иконка linkedin">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/svg/symbol-defs.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                     </div>
 
                     </li>
@@ -120,6 +214,35 @@
                         <div class="text-conteiner">
                             <h3 class="team-name">Николай Тарасов</h3>
                             <p class="team-text" lang="en">Marketing</p>
+                            <ul class="socials">
+                                <li class="sacials-item list">
+                                    <a class="social-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="иконка instagram ">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/svg/symbol-defs.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                <li class="sacials-item list">
+                                    <a class="social-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="иконка twitter">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/svg/symbol-defs.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="sacials-item list">
+                                    <a class="social-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="иконка fecebook">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/svg/symbol-defs.svg#icon-fecebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="sacials-item list">
+                                    <a class="social-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="иконка linkedin">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/svg/symbol-defs.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </li>
                     <li class="team-item"> 
@@ -127,6 +250,35 @@
                         <div class="text-conteiner">
                             <h3 class="team-name">Михаил Ермаков</h3>
                             <p class="team-text" lang="en">UI Designer</p>
+                            <ul class="socials">
+                                <li class="sacials-item list">
+                                    <a class="social-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="иконка instagram ">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/svg/symbol-defs.svg#icon-instagram"></use>
+                                        </svg>
+                                    </a>
+                                <li class="sacials-item list">
+                                    <a class="social-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="иконка twitter">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/svg/symbol-defs.svg#icon-twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="sacials-item list">
+                                    <a class="social-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="иконка fecebook">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/svg/symbol-defs.svg#icon-fecebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="sacials-item list">
+                                    <a class="social-link" href="#" target="_blank" rel="noopener noreferrer" aria-label="иконка linkedin">
+                                        <svg class="social-icon" width="20" height="20">
+                                            <use href="./images/svg/symbol-defs.svg#icon-linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
 
                     </li>
@@ -134,6 +286,53 @@
          </div>
         
 
+        </section>
+
+
+        <!--ПОСТОЯННЫЕ КЛИЕНТЫ -->
+        <section class="gallery section">
+            <div class="container">
+                <h2 class="gallery-title">Постоянные клиенты</h2>
+                
+                <ul class="gallery-list list">
+
+                    <li class="gallery-item">
+                        <svg class="img" width="106" height="60">
+                            <use href="./images/svg/symbol-defs.svg#icon-group-1"></use>
+                        </svg>
+                    </li>
+
+                    <li class="gallery-item">
+                        <svg class="img" width="106" height="60">
+                            <use href="./images/svg/symbol-defs.svg#icon-group-2"></use>
+                        </svg>
+                    </li>
+
+                    <li class="gallery-item">
+                        <svg class="img" width="106" height="60">
+                            <use href="./images/svg/symbol-defs.svg#icon-group-3"></use>
+                        </svg>
+                    </li>
+
+                    <li class="gallery-item">
+                        <svg class="img" width="106" height="60">
+                            <use href="./images/svg/symbol-defs.svg#icon-group-4"></use>
+                        </svg>
+                    </li>
+
+                    <li class="gallery-item">
+                        <svg class="img" width="106" height="60">
+                            <use href="./images/svg/symbol-defs.svg#icon-group-5"></use>
+                        </svg>
+                    </li>
+
+                    <li class="gallery-item">
+                        <svg class="img" width="106" height="60">
+                            <use href="./images/svg/symbol-defs.svg#icon-group-6"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
         </section>
 
     </main>

@@ -16,6 +16,7 @@
 --style-button-secondary:#188ce8; 
 --fon-titl-adr:#2F303A;
 --br-pr-style: #EEEEEE;
+--social-st:#AFB1B8;
 }
 
 body {
@@ -78,6 +79,7 @@ p {
 }
 
 /* Оформлення логотипу */
+
 .logo {
     margin-right: 93px;
     padding-top: 24px;
@@ -101,6 +103,9 @@ p {
     color: var(--style-fon-white);
     }
 
+
+/* Навігація */
+
 .main-nav {
     display: flex;
     align-items: center;
@@ -119,8 +124,7 @@ p {
 .site-nav .item {
     margin-right: 50px;
     align-items: center;
-    
-     }
+    }
 
 .site-nav .item:last-child {
     margin-right: 0px;}
@@ -137,7 +141,7 @@ p {
     letter-spacing: 0.02em;
     }
 
-    .auth-nav .item + .item {
+.auth-nav .item + .item {
     margin-left: 50px;
     }
 
@@ -163,6 +167,12 @@ p {
     text-decoration: none;
     }
 
+.auth-nav-icon {
+    margin-right: 10px;
+    align-items: center;
+    fill: currentColor;
+
+}
 
 .link-site:hover,.link-site:focus,
 .link-auth:hover, .link-auth:focus {
@@ -253,17 +263,32 @@ border-radius: 4px;
 
 /* Заголовок */
 
-.title {
-    padding-top: 200px;
-    padding-bottom: 200px
-    ;
-    background-color: var(--fon-titl-adr);
-    text-align: center;
-    }   
 
-.title-name{
+.fon {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/fon.jpg);
+
+    background-repeat: no-repeat;
+    background-position: center;
+  
+    background-size: cover;
+}
+  
+
+.title-name {
     margin-top: 0;
     margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 696px; 
+    text-align: center; 
 
     color: var(--style-fon-white);
 
@@ -289,6 +314,7 @@ border-radius: 4px;
 }
   
 .descriptions-name {
+    margin-top: 30px;
     margin-bottom: 10px;
 
     font-weight: 700;
@@ -305,6 +331,24 @@ border-radius: 4px;
     letter-spacing: 0.03em;
     }
 
+/* Іконки сексії опису */
+
+.descriptions-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+
+    color: var(--style-basis);
+    background-color: var(--style-button);
+    border-radius: 4px;
+}
+
+.img-icon {
+    fill: currentColor;
+}
+
 
 
 /* Чим ми займаємось */
@@ -319,6 +363,8 @@ border-radius: 4px;
 .team-item {
     background-color: var(--style-fon-white);
     width: 370px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team {
@@ -369,11 +415,93 @@ padding: 30px 32px;
     }
 
 .team-text {
+    margin-bottom: 16px;
+    
     color: var(--style-text);
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
     }
+
+/*Мережеві іконки  */
+    .socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+    }
+    .sacials-item:not(:last-child) {
+        margin-right: 10px;
+}
+    .social-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+
+        background-color: var(--style-fon-white);
+        color: var(--social-st);
+
+        border-radius: 50%;
+    }
+
+    .social-link:hover,
+    .social-link:focus {
+    background-color: var(--style-blue);
+    color: var(--style-fon-white);
+    }
+    
+    .social-icon {
+      fill: currentColor;}
+
+
+/* Постійні клієнти */
+
+.gallery-title {
+    margin-bottom:50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.gallery-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.gallery-item {
+    background-color: var(--style-fon-white);
+    color: var(--social-st);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+
+    border: 1px solid var(--social-st);
+    border-radius: 4px;
+}
+
+.gallery-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.gallery-item:hover,
+.gallery-item:focus {
+    border: 1px solid var(--style-blue);
+    color: var(--style-blue);
+    }
+
+.img {
+    fill: currentColor;}
+
 
 
 /* Сторінка портфоліо */
@@ -392,6 +520,9 @@ flex-wrap: wrap;
 .portfolio-element {
     margin-right: 30px; 
     margin-bottom: 30px;
+
+    /* border: 1px solid var(--br-pr-style);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); */
 }
 
 .portfolio-element:nth-child(3n) {
