@@ -151,17 +151,18 @@ p {
 
 .link-site {
     display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
     color: var(--style-basis);
     text-decoration: none;
     }
    
 .link-auth {
-    display: block;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
 
     color: var(--style-text);
     text-decoration: none;
@@ -171,7 +172,6 @@ p {
     margin-right: 10px;
     align-items: center;
     fill: currentColor;
-
 }
 
 .link-site:hover, .link-site:focus,
@@ -202,17 +202,17 @@ p {
 }
 
 .button-title:hover, .button-title:focus  {
-background-color: var(--style-button-secondary);
+    background-color: var(--style-button-secondary);
 }
 
 .button-nav {
     display: flex;
-    
-    margin-bottom: 50px;
-
-        padding-left: 0;
     justify-content: center;
     align-items: center;
+
+    margin-bottom: 50px;
+    padding-left: 0;
+    
    }
 
 .button-nav:last-child {
@@ -220,20 +220,23 @@ background-color: var(--style-button-secondary);
 }
 
 .button-list {
-margin-right: 8px;
-border-radius: 4px;
-
-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-border-radius: 4px;
-}
+    margin-right: 8px;
+        }
 
 .button-list:last-child {
-        margin-right: 0px;
+    margin-right: 0px;
     }
+
+.button-list:hover,
+.button-list:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 
 .button-one {
     display: inline-block;
-    border: 4px solid transparent;
+    border: none;
+    border-radius: 4px;
     padding: 6px 22px;
     min-width: 73px;
 
@@ -247,7 +250,8 @@ border-radius: 4px;
 
 .button{
     display: inline-block;
-    border: 4px solid transparent;
+    border: none;
+    border-radius: 4px;
     padding: 6px 22px;
     min-width: 103px;
 
@@ -454,12 +458,16 @@ padding: 30px 32px;
 
     .social-link:hover,
     .social-link:focus {
-    background-color: var(--style-blue);
-    color: var(--style-fon-white);
+        background-color: var(--style-blue);
+        color: var(--style-fon-white);
     }
     
     .social-icon {
-      fill: currentColor;}
+      fill: currentColor;
+    }
+
+
+
 
 
 /* Постійні клієнти */
@@ -478,10 +486,13 @@ padding: 30px 32px;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
-.gallery-item {
+.gallery-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.gallery-link {
     background-color: var(--style-fon-white);
     color: var(--social-st);
 
@@ -495,18 +506,15 @@ padding: 30px 32px;
     border-radius: 4px;
 }
 
-.gallery-item:not(:last-child) {
-    margin-right: 30px;
-}
-
-.gallery-item:hover,
-.gallery-item:focus {
+.gallery-link:hover,
+.gallery-link:focus {
     border: 1px solid var(--style-blue);
     color: var(--style-blue);
     }
 
 .img {
     fill: currentColor;}
+
 
 
 
@@ -526,29 +534,29 @@ padding: 30px 32px;
 .portfolio-element {
     margin: 15px;
     min-width: 370px;
-    /* margin-right: 30px;  */
-    /* margin-bottom: 30px; */
 
     flex-basis: calc((100% - 120px) / 3);
 
+    background: var(--style-fon-white);
     border: 1px solid var(--br-pr-style);
+}
+
+.portfolio-link {
+    cursor: pointer;
+    text-decoration: none;
+    }
+
+.portfolio-element:hover,
+.portfolio-element:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-/* .portfolio-element:nth-child(3n) {
-    margin-right: 0px;
-}
-
-.portfolio-element:nth-last-child(-n+3) {
-    margin-bottom: 0px;
-} */
-
 .text-portfolio {
     padding: 20px 24px;
-    /* border: 1px solid var(--br-pr-style); */
-}
+  }
 
 .portfolio-name {
+    color: var(--style-basis);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -561,6 +569,7 @@ padding: 30px 32px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     }
+
 
 
     /*Кінцівка сторінок */
@@ -636,10 +645,8 @@ padding: 30px 32px;
     }
 
     .join-conteiner {
-        padding-top: 12px;
-        padding-left: 70px;
-        margin: 0;
-    }
+        margin-left: 70px;
+      }
 
     .join-title {
         margin-bottom: 20px;
